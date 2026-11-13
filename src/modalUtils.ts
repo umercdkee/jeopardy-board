@@ -1,9 +1,7 @@
 import { atom, useAtomValue, useSetAtom } from "jotai";
+import type { QuestionType } from "./components/board/data";
 
-type ModalState = {
-  question: string;
-  answer: string;
-} | null;
+type ModalState = (QuestionType & { category: string }) | null;
 
 const ModalAtom = atom<ModalState>(null);
 
@@ -19,9 +17,27 @@ function useCloseModal() {
 
 function useSetModalData() {
   const setModal = useSetAtom(ModalAtom);
-  return (question: string, answer: string) => {
-    setModal({ question, answer });
+  return (question: QuestionType, category: string) => {
+    setModal({ ...question, category });
   };
 }
 
-export { useModalData, useCloseModal, useSetModalData };
+// One font size (in px) shared by every question popup, so all questions look the same.
+// SizeProbe measures every question and sets the largest size at which all of them fit.
+const PopupFontSizeAtom = atom(16);
+
+function usePopupFontSize() {
+  return useAtomValue(PopupFontSizeAtom);
+}
+
+function useSetPopupFontSize() {
+  return useSetAtom(PopupFontSizeAtom);
+}
+
+export {
+  useModalData,
+  useCloseModal,
+  useSetModalData,
+  usePopupFontSize,
+  useSetPopupFontSize,
+};

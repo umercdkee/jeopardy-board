@@ -17,14 +17,21 @@ function Board({
     (i: number, j: number) => {
       const questionData = questions[i][j];
       if (questionData) {
-        setModalQuestion(questionData.question, questionData.answer);
+        // Rows are point values and columns are categories, so j picks the category.
+        setModalQuestion(questionData, categories[j]);
       }
     },
-    [questions, setModalQuestion]
+    [questions, categories, setModalQuestion]
   );
 
   return (
-    <div className="grid grid-cols-7 gap-4 bg-black-200 rounded-lg overflow-hidden flex-grow p-5 text-2xl text-white mx-52">
+    <div
+      className="grid gap-4 bg-black-200 rounded-lg overflow-hidden flex-grow min-h-0 p-5 text-2xl text-white mx-52"
+      style={{
+        gridTemplateColumns: `repeat(${categories.length}, minmax(0, 1fr))`,
+        gridTemplateRows: `auto repeat(${questions.length}, minmax(0, 1fr))`,
+      }}
+    >
       {categories.map((cat) => (
         <BoardHeading key={cat}>{cat}</BoardHeading>
       ))}

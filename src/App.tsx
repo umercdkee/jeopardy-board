@@ -1,9 +1,17 @@
 import { useState } from "react";
 import Board from "./components/board";
-import Modal from "./components/Modal";
+import Modal, { SizeProbe } from "./components/Modal";
 import Header from "./components/Header";
 import "./index.css";
 import { juniorsData, seniorsData } from "./components/board/data";
+
+// Every question on both boards, tagged with its category, so the popup text size
+// can be chosen to fit the longest of them.
+const allQuestions = [juniorsData, seniorsData].flatMap((data) =>
+  data.questions.flatMap((row) =>
+    row.flatMap((q, col) => (q ? [{ ...q, category: data.categories[col] }] : []))
+  )
+);
 
 function App() {
   const [selectedLevel, setSelectedLevel] = useState<"Juniors" | "Seniors" | null>(null);
@@ -36,6 +44,7 @@ function App() {
 
   return (
     <>
+      <SizeProbe questions={allQuestions} />
       <Modal />
       <main
         className="w-dvw h-dvh font-anton py-6 bg-black-100 overflow-hidden flex flex-col gap-6 text-center"
