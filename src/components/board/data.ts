@@ -920,17 +920,6 @@ const seniors: Data = {
       },
       {
         points: 50,
-        question: "In aquatic toxicology and wastewater management, what does the acronym BOD stand for, and what does a high BOD reading typically signify?",
-        options: [
-          "Biological Ozone Demand; high atmospheric pollution",
-          "Biochemical Oxygen Demand; high organic pollution and depleted dissolved oxygen",
-          "Basic Organic Decomposition; rapid soil nutrient renewal",
-          "Benthic Organism Density; high structural biodiversity",
-        ],
-        answer: "B",
-      },
-      {
-        points: 60,
         question: "What term describes the standard rate at which atmospheric temperature decreases with an increase in altitude within the troposphere?",
         options: [
           "Environmental lapse rate",
@@ -940,19 +929,24 @@ const seniors: Data = {
         ],
         answer: "A",
       },
+      {
+        points: 60,
+        question: "In aquatic toxicology and wastewater management, what does the acronym BOD stand for, and what does a high BOD reading typically signify?",
+        options: [
+          "Biological Ozone Demand; high atmospheric pollution",
+          "Biochemical Oxygen Demand; high organic pollution and depleted dissolved oxygen",
+          "Basic Organic Decomposition; rapid soil nutrient renewal",
+          "Benthic Organism Density; high structural biodiversity",
+        ],
+        answer: "B",
+      },
     ],
     // Mystery
     [
       {
         points: 10,
         question: "At what young age did Arfa Karim become the world's youngest Microsoft Certified Professional (MCP) in 2004?",
-        options: [
-          "5 years old",
-          "9 years old",
-          "14 years old",
-          "18 years old",
-        ],
-        answer: "B",
+        answer: "9 years old",
       },
       {
         points: 20,
@@ -962,7 +956,13 @@ const seniors: Data = {
       {
         points: 30,
         question: "At the time of independence in 1947, there was a severe shortage of female medical professionals, with barely over 100 female doctors in the region. To address this crisis, the government established Pakistan's first-ever exclusive women's medical college in Lahore. What is the name of this historic institution?",
-        answer: "Fatima Jinnah Medical College (now University)",
+        options: [
+          "Lady Willingdon Medical College",
+          "Fatima Jinnah Medical College",
+          "Begum Ra'ana Liaquat Ali Khan Medical College",
+          "Lady Aitchison Medical College",
+        ],
+        answer: "B",
       },
       {
         points: 40,
@@ -977,18 +977,18 @@ const seniors: Data = {
       },
       {
         points: 50,
-        question: "Dr. Nergis Mavalvala is renowned for her pioneering work in the direct detection of gravitational waves as part of which major international scientific collaboration?",
+        question: "In 2020, Pakistani-American astrophysicist Dr. Nergis Mavalvala made history by becoming the first woman appointed to which major leadership role?",
         options: [
-          "LIGO (Laser Interferometer Gravitational-Wave Observatory)",
-          "CERN (The Large Hadron Collider)",
-          "The Hubble Space Telescope Mission",
-          "The James Webb Space Telescope Team",
+          "Dean of the MIT School of Science",
+          "Director-General of CERN",
+          "Chair of Astrophysics at Caltech",
+          "Chief Scientist at NASA",
         ],
         answer: "A",
       },
       {
         points: 60,
-        question: "At MIT, Dr. Nergis Mavalvala’s research group heavily focuses on macroscopic quantum mechanics and the generation of what specific optical state to dramatically reduce quantum noise in gravitational wave detectors?",
+        question: "Dr. Nergis Mavalvala’s research group heavily focuses on macroscopic quantum mechanics and the generation of what specific optical state to dramatically reduce quantum noise in gravitational wave detectors?",
         options: [
           "Bose-Einstein condensates of photons",
           "Rydberg polariton lattices",
