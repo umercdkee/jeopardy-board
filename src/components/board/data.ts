@@ -527,7 +527,7 @@ const seniors: Data = {
     "Chemistry",
     "Computer Science",
     "Biology",
-    "Environment",
+    "Environmental Studies",
     "Mystery",
   ],
   questions: [
@@ -872,7 +872,7 @@ const seniors: Data = {
         answer: "A",
       },
     ],
-    // Environment
+    // Environmental Studies
     [
       {
         points: 10,
