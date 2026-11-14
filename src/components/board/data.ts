@@ -557,14 +557,8 @@ const seniors: Data = {
       },
       {
         points: 30,
-        question: "What is the sum of the interior angles of a hexagon?",
-        options: [
-          "540°",
-          "600°",
-          "720°",
-          "900°",
-        ],
-        answer: "C",
+        question: "$M(3, -1)$ is the midpoint of $AB$. If $A$ is $(-2, 4)$, what are the coordinates of $B$?",
+        answer: "$(8, -6)$",
       },
       {
         points: 40,
@@ -695,14 +689,8 @@ const seniors: Data = {
       },
       {
         points: 30,
-        question: "For the exothermic reaction $\\mathrm{N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)}$, which change increases the equilibrium yield of $\\mathrm{NH_3}$?",
-        options: [
-          "Increasing the temperature",
-          "Increasing the pressure",
-          "Removing the catalyst",
-          "Removing $\\mathrm{N_2}$ from the mixture",
-        ],
-        answer: "B",
+        question: "Silicon dioxide melts at about 1700 °C, while carbon dioxide turns to gas at −78 °C. Why is there such a large difference?",
+        answer: "$\\mathrm{SiO_2}$ has a giant covalent structure, so many strong covalent bonds must be broken; $\\mathrm{CO_2}$ is simple molecular, so only weak intermolecular forces are overcome",
       },
       {
         points: 40,
@@ -742,12 +730,12 @@ const seniors: Data = {
     [
       {
         points: 10,
-        question: "Which service translates a domain name into an IP address?",
+        question: "Which of these is both an input and an output device?",
         options: [
-          "DHCP",
-          "DNS",
-          "FTP",
-          "HTTP",
+          "Scanner",
+          "Touchscreen",
+          "Projector",
+          "Microphone",
         ],
         answer: "B",
       },
@@ -775,12 +763,12 @@ const seniors: Data = {
       },
       {
         points: 40,
-        question: "During compilation, which phase converts source code into tokens such as keywords, identifiers and operators?",
+        question: "A CPU finds the data it needs in cache 90% of the time. A cache hit takes 2 ns; a miss costs 50 ns in total. What is the average memory access time?",
         options: [
-          "Syntax Analysis",
-          "Lexical Analysis",
-          "Code Generation",
-          "Code Optimisation",
+          "5.0 ns",
+          "6.8 ns",
+          "26 ns",
+          "45.2 ns",
         ],
         answer: "B",
       },
@@ -851,14 +839,14 @@ const seniors: Data = {
       },
       {
         points: 50,
-        question: "During the mitotic cell cycle, in which phase do sister chromatids separate and move to opposite poles?",
+        question: "Which statement about the hepatic portal vein is correct?",
         options: [
-          "Metaphase",
-          "Anaphase",
-          "Prophase",
-          "Telophase",
+          "It carries oxygenated blood from the aorta to the liver",
+          "It carries blood from the liver to the inferior vena cava",
+          "It carries blood between two capillary beds, from the gut to the liver",
+          "Its blood pressure is higher than that of the hepatic artery",
         ],
-        answer: "B",
+        answer: "C",
       },
       {
         points: 60,
@@ -931,12 +919,12 @@ const seniors: Data = {
       },
       {
         points: 60,
-        question: "In aquatic toxicology and wastewater management, what does the acronym BOD stand for, and what does a high BOD reading typically signify?",
+        question: "Which sequence of events best describes the primary mechanism leading to severe oxygen depletion (oxygen sag) in a freshwater body affected by cultural eutrophication?",
         options: [
-          "Biological Ozone Demand; high atmospheric pollution",
-          "Biochemical Oxygen Demand; high organic pollution and depleted dissolved oxygen",
-          "Basic Organic Decomposition; rapid soil nutrient renewal",
-          "Benthic Organism Density; high structural biodiversity",
+          "Increased macrophyte growth directly absorbs all dissolved oxygen from the water column during daylight hours",
+          "Algal blooms limit light penetration, causing submerged plants to die; aerobic decomposition of this dead organic matter by bacteria then consumes vast amounts of dissolved oxygen",
+          "High concentrations of nitrates chemically bind with dissolved oxygen molecules, precipitating them out of the water column",
+          "Zooplankton populations multiply exponentially and consume all available dissolved oxygen through respiration",
         ],
         answer: "B",
       },
